@@ -30,6 +30,9 @@
       }
       img {
         height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
       }
       .carousel {
         width: 800px;
@@ -38,12 +41,51 @@
         border-radius: 8px;
         color: #fff;
         padding: 32px;
+        padding-left: 86px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
       }
-      .testionial-text {
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
       }
-      .testionial-author {
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 14px;
+        color: #c3fae8;
       }
-      .testionial-job {
+      .testimonial-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+
+      /* Buttons */
+      .btn {
+        background: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+      .btn--left {
+      }
+      .btn--rigt {
       }
     </style>
   </head>
@@ -52,16 +94,14 @@
       <img src="maria.jpg" alt="Maria's Image" />
       <blockquote class="testimonial">
         <p class="testimonial-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
           obcaecati adipisci dolorum enim deleniti id neque minima possimus
-          repudiandae unde architecto quasi recusandae voluptatem iste in
-          veritatis, accusantium officia. Sint!
+          repudiandae unde architecto quasi."
         </p>
-        <p class="testimonial-auth">Maria de Almeida</p>
+        <p class="testimonial-auth">Maria De Almeida</p>
         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
-        or
       </blockquote>
-      <button class="btn">
+      <button class="btn btn--left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -77,7 +117,7 @@
           />
         </svg>
       </button>
-      <button class="btn">
+      <button class="btn btn--right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
