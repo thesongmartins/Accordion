@@ -40,7 +40,7 @@
         position: relative;
 
         display: flex;
-        /* align-items: center; */
+        align-items: center;
         gap: 86px;
       }
       img {
@@ -74,7 +74,8 @@
         width: 40px;
         border-radius: 50%;
         position: absolute;
-        top: 50%;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
 
         display: flex;
         align-items: center;
@@ -86,10 +87,36 @@
         stroke: #087f5b;
       }
       .btn--left {
+        /* In relation to PARENT ELEMENT */
         left: 0;
+        top: 50%;
+        /* In realtion to ELEMENT ITSELF */
+        transform: translate(-50%, -50%);
       }
       .btn--right {
         right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        background: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot--fill {
+        background: #087f5b;
       }
     </style>
   </head>
@@ -102,7 +129,7 @@
           obcaecati adipisci dolorum enim deleniti id neque minima possimus
           repudiandae unde architecto quasi."
         </p>
-        <p class="testimonial-auth">Maria De Almeida</p>
+        <p class="testimonial-author">Maria De Almeida</p>
         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
 
@@ -139,6 +166,13 @@
           />
         </svg>
       </button>
+
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
     </div>
   </body>
 </html>
