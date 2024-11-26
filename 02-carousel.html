@@ -28,12 +28,7 @@
         color: #343a40;
         line-height: 1;
       }
-      img {
-        height: 200px;
-        border-radius: 8px;
-        transform: scale(1.5);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-      }
+
       .carousel {
         width: 800px;
         background: #087f5b;
@@ -45,8 +40,14 @@
         position: relative;
 
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         gap: 86px;
+      }
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
       }
       .testimonial-text {
         font-size: 18px;
@@ -57,7 +58,7 @@
       }
       .testimonial-author {
         font-size: 14px;
-        margin-bottom: 14px;
+        margin-bottom: 4px;
         color: #c3fae8;
       }
       .testimonial-job {
@@ -73,6 +74,7 @@
         width: 40px;
         border-radius: 50%;
         position: absolute;
+        top: 50%;
 
         display: flex;
         align-items: center;
@@ -84,8 +86,10 @@
         stroke: #087f5b;
       }
       .btn--left {
+        left: 0;
       }
-      .btn--rigt {
+      .btn--right {
+        right: 0;
       }
     </style>
   </head>
@@ -101,6 +105,7 @@
         <p class="testimonial-auth">Maria De Almeida</p>
         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
+
       <button class="btn btn--left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +122,7 @@
           />
         </svg>
       </button>
+
       <button class="btn btn--right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
